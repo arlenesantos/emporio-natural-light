@@ -1,0 +1,18 @@
+body {
+    font-family: arial;
+}
+
+/* navbar */
+
+.company-font {
+    font-family: 'Pinyon Script', 'Rouge Script', 'Parisienne', arial;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*  */
