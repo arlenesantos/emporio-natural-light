@@ -38,13 +38,9 @@
 <body>
     <header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand company-font" href="#">
-                    <!-- corrigir favicon e link -->
-                    <img src="assets/images/favicon.png" alt="Empório Natural logotipo" width="30" height="24"
-                        class="d-inline-block align-text-top"> Empório Natural
-                </a>
+                <span class="navbar-brand company-font">Empório Natural </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -64,8 +60,8 @@
     </header>
     <main>
         <!-- hero -->
-        <section class="py-5 text-center container-fluid hero">
-            <div class="row">
+        <section class="pt-5 text-center container-fluid hero">
+            <div class="row d-flex align-items-center">
                 <div class="col-md-6 col-lg-6 mx-auto">
                     <h1 class="">Empório Natural<br><span class="h2 text-muted">Produtos Naturais em Araucária</span>
                     </h1>
@@ -80,17 +76,38 @@
 
             </div>
         </section>
-        <div class="py-5 bg-light">
-            <div class="container">
 
+        <!-- products -->
+        <section class="py-5 bg-light">
+            <div class="container">
                 <div id="product-card" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
                     <!-- js loop -->
-
-
-
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- contact -->
+        <section class=" container-fluid py-1 px-1 bg-warning">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-12 col-lg-4 card-contact text-success mb-5">
+                    <div class="row">
+                        <i class="bi bi-geo-alt-fill pb-2"> Endereço </i>
+                        <address>Rua Coronel João Antônio Xavier, nº 771 <br> Centro - Araucária/PR </address>
+                    </div>
+                    <div class="row">
+                        <i class="bi bi-whatsapp pe-2"> <span>Whatsapp</span> (41) 98828-7796</i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2139.6133236857686!2d-49.40886466719502!3d-25.592075159015568!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8fca7216103c4542!2sEmp%C3%B3rio%20Natural!5e0!3m2!1sen!2spt!4v1652708118226!5m2!1sen!2spt"
+                            width="100%" height="300" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" name="mapa"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer class="bg-dark p-2">
@@ -99,6 +116,7 @@
 
 
     <script type="module" src="main.js"></script>
+
 
 </body>
 

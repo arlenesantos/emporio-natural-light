@@ -16,6 +16,7 @@ body {
     font-family: 'Pinyon Script', 'Rouge Script', 'Parisienne', arial;
     font-size: 1.5rem;
     letter-spacing: 0.5px;
+    padding-left: 1rem;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -40,8 +41,6 @@ body {
 
 
 /* card - produtos */
-
-
 .img-product {
     max-height: 200px;
 }
@@ -49,5 +48,10 @@ body {
 .rounded-whatsapp {
     border-radius: 50%;
     padding: 5px 10px;
+}
 
+/* */
+
+.card-contact {
+    width: 420px;
 }
