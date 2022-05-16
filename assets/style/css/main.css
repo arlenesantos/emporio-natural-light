@@ -32,3 +32,22 @@ body {
     font-size: 1rem;
     font-weight: bold;
 }
+
+.btn-whatsapp:hover {
+    color: white;
+
+}
+
+
+/* card - produtos */
+
+
+.img-product {
+    max-height: 200px;
+}
+
+.rounded-whatsapp {
+    border-radius: 50%;
+    padding: 5px 10px;
+
+}
