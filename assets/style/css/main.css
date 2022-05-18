@@ -19,6 +19,10 @@ body {
     padding-left: 1rem;
 }
 
+.link-secondary {
+    text-decoration: none;
+}
+
 .navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -26,7 +30,15 @@ body {
 
 }
 
+
+
 /* hero - promoção */
+
+.hero{
+    margin-top: 78px;
+
+}
+
 .btn-whatsapp {
     background-color: #01e675;
     color: white;
