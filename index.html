@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
 
-    <!-- normalize css -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- normalize css 
+    <link rel="stylesheet" href="css/normalize.css">-->
     <!-- bootstrap v5.1 -->
     <link rel="stylesheet" href="assets/style/bootstrap/css/bootstrap.min.css">
     <script src="assets/style/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -39,18 +39,19 @@
     <header>
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container-fluid">                 
-                <p class="navbar-brand company-font mb-0">Empório Natural</p>              
-                  
+            <div class="container-fluid">
+                <p class="navbar-brand company-font mb-0">Empório Natural</p>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">                    
-                    <ul class="navbar-nav">  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="https://wa.me/5541988287796" class="nav-link link-secondary" target="_blank"><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp"> (41) 98828-7796</i></a> 
-                        </li>                      
+                            <a href="https://wa.me/5541988287796" class="nav-link link-secondary" target="_blank"><i
+                                    class="bi bi-whatsapp" role="img" aria-label="Whatsapp"> (41) 98828-7796</i></a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Produtos</a>
                         </li>
@@ -62,35 +63,63 @@
             </div>
         </nav>
     </header>
+
     <main>
         <!-- hero -->
         <section class="pt-5 text-center container-fluid hero">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6 col-lg-6 mx-auto">
-                    <h1 class="">Empório Natural<br><span class="h2 text-muted">Produtos Naturais em Araucária</span>
+                    <h1>Empório Natural<br><span class="h2 text-muted">Produtos Naturais em Araucária</span>
                     </h1>
                     <p>A cada semana uma nova promoção para nossos clientes. Consulte os produtos selecionados e
                         aproveite!</p>
-                    <a href="https://wa.me/5541988287796" class="btn btn-whatsapp my-2" target="_blank"><i class="bi bi-whatsapp me-2"
-                            role="img" aria-label="Contato de Whatsapp"></i>Fale conosco</a>
+                    <a href="https://wa.me/5541988287796" class="btn btn-whatsapp my-2" target="_blank"><i
+                            class="bi bi-whatsapp me-2" role="img" aria-label="Contato de Whatsapp"></i>Fale conosco</a>
                 </div>
                 <div class="col-md-6 col-lg-6 mx-auto">
                     <img src="assets/images/discount.jpg" alt="Imagem de desconto" class="img-fluid">
                 </div>
-
             </div>
         </section>
 
-        <!-- products -->
+        <!-- products carousel -->
         <section class="py-5 bg-light">
+            <h1 class="display-6 text-center pb-3">Produtos em destaque</h1>
             <div class="container">
-                <div id="product-card" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
-                    <!-- js loop -->
+                <div id="carouselIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- showCarousel() - see main.js -->
+                    </div>
+                    <button class="carousel-control-prev justify-content-start" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next justify-content-end" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
 
-        <!-- contact - map -->
+        <hr class="m-0">
+
+        <!-- products grid -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div>
+                    <h1 class="display-6 text-center pb-3">Mais produtos</h1>
+                </div>
+                <div id="product-card" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+                    <!-- showProductsGrid() - see main.js -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- contact - map 
         <section class=" container-fluid p-0">            
             <div class="ratio ratio-16x9">
                 <iframe
@@ -98,18 +127,23 @@
                     width="100%" height="300" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" name="mapa"></iframe>
             </div> 
-        </section>
+        </section>-->
 
     </main>
-    <footer class="bg-dark p-2">     
+
+    <footer class="bg-dark p-2">
         <div>
             <ul class="d-flex justify-content-center px-0">
-                <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-facebook" role="img" aria-label="Facebook"></i></a></li>
-                <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a></li>
-                <li><a href="https://wa.me/5541988287796" class="text-white p-3" target="_blank"><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i></a></li>
-            </ul> 
-            <address class="text-white text-center">Rua Coronel João Antônio Xavier, 771 <br> Centro - Araucária/PR </address>
-        </div>  
+                <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-facebook" role="img"
+                            aria-label="Facebook"></i></a></li>
+                <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-instagram" role="img"
+                            aria-label="Instagram"></i></a></li>
+                <li><a href="https://wa.me/5541988287796" class="text-white p-3" target="_blank"><i
+                            class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i></a></li>
+            </ul>
+            <address class="text-white text-center">Rua Coronel João Antônio Xavier, 771 <br> Centro - Araucária/PR
+            </address>
+        </div>
         <p class="small text-white text-center m-0">&copy; 2022</p>
     </footer>
 

@@ -1,29 +1,45 @@
 let products = [
     {
         name: "nome do produto1",
-        price: "15,00",
+        price: "1,00",
     },
     {
         name: "nome do produto2",
-        price: "20,00",
+        price: "2,00",
     },
     {
         name: "nome do produto3",
-        price: "10,00",
+        price: "3,00",
     },
     {
         name: "nome do produto1",
-        price: "15,00",
+        price: "4,00",
     },
     {
         name: "nome do produto2",
-        price: "20,00",
+        price: "5,00",
     },
     {
         name: "nome do produto3",
-        price: "10,00",
+        price: "6,00",
+    },
+    {
+        name: "nome do produto1",
+        price: "7,00",
+    },
+    {
+        name: "nome do produto2",
+        price: "8,00",
+    },
+    {
+        name: "nome do produto2",
+        price: "9,00",
     },
 
+
+
+
 ]
+
 
 export { products };

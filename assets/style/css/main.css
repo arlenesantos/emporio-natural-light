@@ -27,14 +27,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.8rem;
-
 }
 
 
 
-/* hero - promoção */
+/* hero */
 
-.hero{
+.hero {
     margin-top: 78px;
 
 }
@@ -51,8 +50,14 @@ body {
 
 }
 
+/* products - carousel */
+.carousel-indicators {
+    position: unset;
 
-/* card - produtos */
+}
+
+
+/* products - card-grid */
 .img-product {
     max-height: 200px;
 }
@@ -60,10 +65,4 @@ body {
 .rounded-whatsapp {
     border-radius: 50%;
     padding: 5px 10px;
-}
-
-/* */
-
-.card-contact {
-    width: 420px;
 }
