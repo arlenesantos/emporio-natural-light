@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Empório Natural é uma loja de produtos naturais localizada no Centro de Araucária, onde encontra-se ervas medicinais, amanteigados e biscoitos, cereais, mel e derivados, melado de cana, frutas cristalizadas, encapsulados, farináceos, castanhas, guloseimas, temperos e especiarias.">
     <meta name="keywords"
         content="Empório Natural, Araucária, produtos naturais, loja de produtos naturais, ervas medicinais, amanteigados, biscoitos, cereais, mel, melado de cana, frutas cristalizadas, encapsulados, farináceos, castanhas, guloseimas, temperos, especiarias, alimentação saudável, vitaminas, suplementos">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.png">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +23,6 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
-
     <!-- normalize css 
     <link rel="stylesheet" href="css/normalize.css">-->
     <!-- bootstrap v5.1 -->
@@ -30,9 +31,8 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/style/css/main.css">
 
-    <!-- favicon -->
-
     <title>Empório Natural | Loja de produtos naturais em Araucária</title>
+
 </head>
 
 <body>
@@ -41,7 +41,6 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <p class="navbar-brand company-font mb-0">Empório Natural</p>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,10 +52,10 @@
                                     class="bi bi-whatsapp" role="img" aria-label="Whatsapp"> (41) 98828-7796</i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Produtos</a>
+                            <a class="nav-link" href="#products">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="#contact">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +82,7 @@
         </section>
 
         <!-- products carousel -->
-        <section class="py-5 bg-light">
+        <section id="products" class="py-5 bg-light">
             <h1 class="display-6 text-center pb-3">Produtos em destaque</h1>
             <div class="container">
                 <div id="carouselIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -91,12 +90,12 @@
                         <!-- showCarousel() - see main.js -->
                     </div>
                     <button class="carousel-control-prev justify-content-start" type="button"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        data-bs-target="#carouselIndicators" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next justify-content-end" type="button"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        data-bs-target="#carouselIndicators" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -119,32 +118,34 @@
         </section>
 
 
-        <!-- contact - map 
-        <section class=" container-fluid p-0">            
+        <!-- contact - map -->
+        <section id="contact" class=" container-fluid p-0">
             <div class="ratio ratio-16x9">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2139.6133236857686!2d-49.40886466719502!3d-25.592075159015568!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8fca7216103c4542!2sEmp%C3%B3rio%20Natural!5e0!3m2!1sen!2spt!4v1652708118226!5m2!1sen!2spt"
                     width="100%" height="300" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" name="mapa"></iframe>
-            </div> 
-        </section>-->
+            </div>
+            <div class="bg-dark p-2">
+                <ul class="d-flex justify-content-center px-0">
+                    <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-facebook" role="img"
+                                aria-label="Facebook"></i></a></li>
+                    <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-instagram" role="img"
+                                aria-label="Instagram"></i></a></li>
+                    <li><a href="https://wa.me/5541988287796" class="text-white p-3" target="_blank"><i
+                                class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i></a></li>
+                </ul>
+                <address class="text-white text-center">Rua Coronel João Antônio Xavier, 771 <br> Centro - Araucária/PR
+                </address>
+            </div>
+        </section>
+        <hr class="m-0">
 
     </main>
 
-    <footer class="bg-dark p-2">
-        <div>
-            <ul class="d-flex justify-content-center px-0">
-                <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-facebook" role="img"
-                            aria-label="Facebook"></i></a></li>
-                <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-instagram" role="img"
-                            aria-label="Instagram"></i></a></li>
-                <li><a href="https://wa.me/5541988287796" class="text-white p-3" target="_blank"><i
-                            class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i></a></li>
-            </ul>
-            <address class="text-white text-center">Rua Coronel João Antônio Xavier, 771 <br> Centro - Araucária/PR
-            </address>
-        </div>
-        <p class="small text-white text-center m-0">&copy; 2022</p>
+
+    <footer class="bg-dark text-muted text-center p-2">
+        <small>&copy; Copyright 2022 - Empório Natural Produtos Naturais Araucária</small>
     </footer>
 
     <script type="module" src="main.js"></script>

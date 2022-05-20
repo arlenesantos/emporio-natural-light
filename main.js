@@ -45,7 +45,7 @@ const showCarousel = (products, cardsPerSlide) => {
     btn.classList.add("active");
 
 
-    for (let i = 0; i <= products.length; i += cardsPerSlide) {
+    for (let i = 0; i < products.length; i += cardsPerSlide) {
 
         let indexCurrentSlide = i;
         let indexNextSlide = i + cardsPerSlide;
@@ -89,16 +89,20 @@ const showCarousel = (products, cardsPerSlide) => {
 };
 
 (() => {
-    if (window.screen.width < 576) {
-
+    if (document.body.clientWidth < 576) {
         showCarousel(products, 1);
-    } else if (window.screen.width < 768) {
+
+    } else if (document.body.clientWidth < 768) {
         showCarousel(products, 2);
+
     } else {
         showCarousel(products, 3);
     }
 
     showProductsGrid(products);
+
 })();
+
+
 
 
