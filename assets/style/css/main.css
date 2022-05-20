@@ -1,17 +1,13 @@
 html {
-    font-size: 20px;
     /* rem size */
-
+    font-size: 20px;
 }
 
 body {
     font-family: arial;
-
-    /* em size */
 }
 
 /* navbar */
-
 .company-font {
     font-family: 'Pinyon Script', 'Rouge Script', 'Parisienne', arial;
     font-size: 1.5rem;
@@ -32,10 +28,8 @@ body {
 
 
 /* hero */
-
 .hero {
     margin-top: 78px;
-
 }
 
 .btn-whatsapp {
@@ -53,13 +47,13 @@ body {
 /* products - carousel */
 .carousel-indicators {
     position: unset;
-
 }
 
 
 /* products - card-grid */
 .img-product {
     max-height: 200px;
+    max-width: 170px;
 }
 
 .rounded-whatsapp {
