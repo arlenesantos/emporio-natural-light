@@ -60,3 +60,8 @@ body {
     border-radius: 50%;
     padding: 5px 10px;
 }
+
+/* footer  */
+footer small {
+    color: #A3B1BC;
+}
